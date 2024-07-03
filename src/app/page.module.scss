@@ -1,0 +1,20 @@
+.root {
+  position: relative;
+  min-height: 500px;
+  padding: 10px;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 34px;
+    opacity: .6;
+  }
+}
