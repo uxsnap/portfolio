@@ -1,4 +1,4 @@
-import styles from './Techs.module.scss'
+import styles from "./Techs.module.scss";
 
 const items = [
   {
@@ -56,6 +56,7 @@ const items = [
 ];
 
 const Techs = () => (
+  // @ts-ignore
   <marquee className={styles.root}>
     {items.map(({ name, logo }) => (
       <div key={name} className={styles.card}>
@@ -63,6 +64,7 @@ const Techs = () => (
         <div>{name}</div>
       </div>
     ))}
+    {/* @ts-ignore */}
   </marquee>
 );
 
