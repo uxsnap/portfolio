@@ -27,7 +27,7 @@ const WorkList = () => {
   return (
     <div className={styles.root}>
       {items.map(({ name, logo }) => (
-        <div className={styles.card}>
+        <div key={name} className={styles.card}>
           <img src={logo} alt={name} />
           <div>{name}</div>
         </div>

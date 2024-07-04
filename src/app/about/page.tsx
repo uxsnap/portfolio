@@ -1,6 +1,9 @@
 import { SandboxFrame } from "../components/SanboxFrame";
+import Techs from "../components/Techs";
 import WorkList from "../components/WorkList";
 import styles from "./About.module.scss";
+
+const TECHS = [];
 
 export default function AboutMe() {
   return (
@@ -52,10 +55,13 @@ export default function AboutMe() {
               <WorkList />
             </div>
           </div>
+
+          <div className={styles.techs}>
+            <h2>Технологии, с которыми работал:</h2>
+
+            <Techs />
+          </div>
         </div>
-      </div>
-      <div className={styles.techs}>
-        <marquee>This text will scroll from right to left</marquee>
       </div>
     </div>
   );

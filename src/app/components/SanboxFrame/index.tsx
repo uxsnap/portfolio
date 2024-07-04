@@ -8,7 +8,7 @@ const LINKS = [
 export const SandboxFrame = ({ n = 0 }) => (
   <iframe
     {...LINKS[n]}
-    style={{ width: "100%", height: "500px" }}
+    style={{ width: "100%", height: "450px" }}
     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
   />
 );

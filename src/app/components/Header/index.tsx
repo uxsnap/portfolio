@@ -11,7 +11,7 @@ const links = [
 const Header = () => (
   <ul className={styles.root}>
     {links.map(({ name, link }) => (
-      <li className={styles.item}>
+      <li key={link} className={styles.item}>
         <Link className={styles.link} href={link}>
           {name}
         </Link>

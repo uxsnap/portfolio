@@ -30,7 +30,6 @@
   text-align: right;
   gap: 8px;
   max-width: 50%;
-  overflow: hidden;
 
   h2 {
     font-size: 24px;
@@ -45,7 +44,7 @@
   }
 
   .jobs {
-    margin-top: 40px;
+    margin-top: 30px;
 
     max-width: 100%;
     width: 100%;
@@ -54,18 +53,14 @@
     align-items: flex-end;
 
     .list {
-      max-width: 700px;
-      overflow-x: auto;
-      padding: 10px;
-      &::-webkit-scrollbar {
-        display: none;
-      }
+      max-width: 100%;
     }
   }
 }
 
 .techs {
   width: 100%;
+  margin-top: 20px;
 }
 
 .divider {
@@ -94,6 +89,8 @@
   }
 
   .project {
+    margin-top: 20px;
+
     max-width: 100%;
   }
 }
