@@ -1,5 +1,5 @@
 import cn from "classnames";
-import RightArrow from "../SanboxFrame/RightArrow";
+import RightArrow from "../RightArrow";
 
 import styles from "./Divider.module.scss";
 import { memo } from "react";
