@@ -1,0 +1,19 @@
+.divider {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}

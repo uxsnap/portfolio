@@ -1,0 +1,29 @@
+.petProjects {
+  display: inline-block;
+  float: left;
+  width: calc(50% - 20px);
+  position: relative;
+  height: 100%;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: bold;
+  }
+
+  div {
+    max-width: 500px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .project {
+    margin-top: 20px;
+
+    max-width: calc(100% - 40px);
+  }
+
+  .divider {
+    right: 0;
+  }
+}
