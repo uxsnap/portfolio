@@ -4,8 +4,8 @@ import cn from "classnames";
 
 import { useState } from "react";
 import styles from "./About.module.scss";
-import PetProjects from "../components/PetProjects";
-import Experience from "../components/Experience";
+import PetProjects from "@/components/PetProjects";
+import Experience from "@/components/Experience";
 
 export default function AboutMe() {
   const [rightSide, setRightSide] = useState(false);
