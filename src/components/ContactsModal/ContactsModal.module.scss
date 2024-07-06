@@ -6,6 +6,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   display: none;
+  z-index: 101;
 
   &.active {
     display: block;
@@ -23,7 +24,7 @@
   top: calc(50% - 150px);
   left: calc(50% - 200px);
   background-color: white;
-  z-index: 100;
+  z-index: 102;
   border-radius: 8px;
   min-width: 400px;
   transform: scale(0);

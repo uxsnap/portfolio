@@ -1,14 +1,51 @@
 .root {
   padding: 20px;
-  
+  display: flex;
+  justify-content: flex-end;
+
+  position: relative;
+}
+
+.list {
   width: auto;
 
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 20px;
+
+  @media (max-width: 768px) {
+    position: absolute;
+
+    right: 16px;
+    top: 50px;
+    flex-direction: column;
+    background-color: white;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #e3e4e9;
+    display: none;
+    z-index: 100;
+
+    &.active {
+      display: flex;
+    }
+  }
 }
 
 .link {
   color: black;
+}
+
+.icon {
+  @media (max-width: 768px) {
+    display: block;
+  }
+
+  display: none;
+  cursor: pointer;
+  width: auto;
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
 }
