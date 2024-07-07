@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./Techs.module.scss";
 
 const items = [
@@ -60,7 +61,12 @@ const Techs = () => (
   <marquee className={styles.root}>
     {items.map(({ name, logo }) => (
       <div key={name} className={styles.card}>
-        <img src={logo} alt={name} />
+        <Image
+          width={50}
+          height={50}
+          src={logo}
+          alt={name}
+        />
         <div>{name}</div>
       </div>
     ))}
