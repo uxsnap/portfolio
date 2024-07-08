@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import styles from "./page.module.scss";
 
 export default function Home() {
@@ -6,6 +8,10 @@ export default function Home() {
       <div className={styles.title}>
         <h1>Software</h1>
         <h2>Engineer</h2>
+      </div>
+
+      <div className={styles.me}>
+        <img src="/static/me.png" alt="_me" />
       </div>
     </div>
   );
