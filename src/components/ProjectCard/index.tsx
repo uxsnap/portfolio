@@ -1,6 +1,8 @@
+import cn from "classnames";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./ProjectCard.module.scss";
+import { useState } from "react";
 
 type Project = {
   name: string;
@@ -14,20 +16,26 @@ type Props = {
 };
 
 const ProjectCard = ({ project }: Props) => {
+  const [active, setActive] = useState(false);
+
   return (
-    <div className={styles.root}>
+    <div
+      onClick={() => setActive(!active)}
+      className={cn(styles.root, active && styles.active)}
+    >
       <div className={styles.img}>
-        <Image height={150} width={385} alt={project.name} src={project.img} />
+        <Image fill alt={project.name} src={project.img} />
       </div>
 
       <div className={styles.name}>{project.name}</div>
+
       <ul className={styles.description}>
         {project.description.map((desc) => (
           <li key={desc}>{desc}</li>
         ))}
       </ul>
 
-      <div className={styles.linkWrapper}>
+      <div onClick={(e) => e.stopPropagation()} className={styles.linkWrapper}>
         <Link href={project.link}>Ссылка</Link>
       </div>
     </div>

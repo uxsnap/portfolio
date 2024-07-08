@@ -48,7 +48,7 @@ const PetProjects = ({ onClick }: Props) => {
             className={styles.creactLink}
             href={"https://creact.vercel.app/"}
           >
-            Ссылка
+            Ссылка на проект
           </Link>
         ) : (
           <SandboxFrame />
