@@ -16,13 +16,15 @@
 
 .divider {
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(calc(-100% - 20px), -50%);
   position: absolute;
   top: 50%;
   cursor: pointer;
   z-index: 2;
   display: flex;
   opacity: 0.3;
+
+  padding: 10px;
 
   &:hover {
     opacity: 1;

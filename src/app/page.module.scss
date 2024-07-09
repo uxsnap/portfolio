@@ -1,14 +1,17 @@
 .root {
   position: relative;
-  height: calc(100% - 78px);
+  height: calc(100% - 70px);
   padding: 10px;
-  overflow-y: hidden;
+  padding-bottom: 0;
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .title {
-  position: absolute;
-  top: 50%;
-  left: 100px;
+  margin-bottom: 80px;
 
   h1 {
     font-size: 60px;
@@ -20,30 +23,33 @@
   }
 
   @media (max-width: 768px) {
-    left: 50%;
-    transform: translateX(-50%);
-
     h1 {
-      font-size: 48px;
+      font-size: 40px;
     }
 
     h2 {
-      font-size: 24px;
+      font-size: 20px;
     }
   }
 }
 
 .me {
-  position: absolute;
-  bottom: -20px;
-  right: 50px;
-
   width: auto;
   height: 100%;
+  align-self: flex-end;
+
+  filter: drop-shadow(10px 10px rgba(240, 46, 170, 0.4))
+    drop-shadow(20px 20px rgba(240, 46, 170, 0.3))
+    drop-shadow(40px 40px rgba(240, 46, 170, 0.1))
+    drop-shadow(50px 50px rgba(240, 46, 170, 0.05));
+  // filter: drop-shadow(10px 10px 4px #4444dd) drop-shadow(20px 10px 4px black);
 
   img {
     width: auto;
     height: 100%;
-    transform: scale(1.4);
   }
+
+  // @media (max-width: 768px) {
+  //   right: auto;
+  // }
 }

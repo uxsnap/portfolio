@@ -1,5 +1,6 @@
 "use client";
 import cn from "classnames";
+import { usePathname } from "next/navigation";
 
 import Link from "next/link";
 import styles from "./Header.module.scss";
@@ -24,6 +25,8 @@ const useOutsideClick = (ref: RefObject<HTMLElement>, callback: () => void) => {
 };
 
 const Header = () => {
+  const pathname = usePathname();
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
@@ -36,6 +39,10 @@ const Header = () => {
   ];
 
   useOutsideClick(menuRef, () => setIsMenuOpen(false));
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
 
   return (
     <>

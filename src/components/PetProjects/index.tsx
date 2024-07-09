@@ -43,7 +43,7 @@ const PetProjects = ({ onClick }: Props) => {
       </div>
 
       <div className={styles.project}>
-        {isSmall ? (
+        {/* {isSmall ? (
           <Link
             className={styles.creactLink}
             href={"https://creact.vercel.app/"}
@@ -51,8 +51,8 @@ const PetProjects = ({ onClick }: Props) => {
             Ссылка на проект
           </Link>
         ) : (
-          <SandboxFrame />
-        )}
+          )} */}
+        <SandboxFrame />
       </div>
 
       <Divider onClick={onClick} className={styles.divider} />
