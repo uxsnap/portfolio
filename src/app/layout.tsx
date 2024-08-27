@@ -3,6 +3,8 @@ import { Source_Code_Pro } from "next/font/google";
 import "./reset.css";
 import Header from "@/components/Header";
 
+import styles from "./page.module.scss";
+
 const sourceCodePro = Source_Code_Pro({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -18,9 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={sourceCodePro.className}>
-        <Header />
+        <div className={styles.layoutRoot}>
+          <Header />
 
-        {children}
+          <div className={styles.main}>{children}</div>
+        </div>
       </body>
     </html>
   );
