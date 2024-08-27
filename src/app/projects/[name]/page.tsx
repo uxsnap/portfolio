@@ -76,8 +76,6 @@ export default function Project({ params }: Props) {
   const { name = "" } = params;
   const { description, img, link } = PROJECTS[name];
 
-  console.log(img);
-
   return (
     <div className={styles.root}>
       <Link href="/projects" className={styles.back}>
