@@ -12,7 +12,7 @@ type Props = {
 
 const PROJECTS: Record<
   string,
-  { description: string[]; img: string; link: string }
+  { description: string[]; imgs: string[]; link: string; navColor: string }
 > = {
   Wildberries: {
     description: [
@@ -22,8 +22,14 @@ const PROJECTS: Record<
       `• Взаимодействовал с дизайнерами, предлагал более гибкие UI/UX решения`,
       `• Улучших архитектуру приложения, примененял Design Patterns на проекте`,
     ],
-    img: "/static/global_wb.png",
+    imgs: [
+      "/static/global_wb.png",
+      "/static/global_wb1.png",
+      "/static/global_wb2.png",
+      "/static/global_wb3.png",
+    ],
     link: "https://global.wildberries.ru",
+    navColor: "rgb(167, 58, 253)",
   },
   Scriptive: {
     description: [
@@ -35,8 +41,14 @@ const PROJECTS: Record<
       `• Довел Core-сервис до PWA`,
       `• Составлял документацию в виде JSDoc`,
     ],
-    img: "/static/scriptive.png",
+    imgs: [
+      "/static/scriptive.png",
+      "/static/scriptive1.png",
+      "/static/scriptive2.png",
+      "/static/scriptive3.png",
+    ],
     link: "https://www.scriptive.com.au/",
+    navColor: "#000",
   },
   IT_One: {
     description: [
@@ -45,8 +57,13 @@ const PROJECTS: Record<
       `• Оптимизировал код, работал с огромным количеством форм на устаревшем API (ReduxForm)`,
       `• Доводил код приложения до Flux-архитектуры`,
     ],
-    img: "/static/it_one_bg.png",
+    imgs: [
+      "/static/it_one_bg.png",
+      "/static/it_one_bg1.png",
+      "/static/it_one_bg2.png",
+    ],
     link: "https://www.it-one.ru/",
+    navColor: "rgb(170, 230, 50)",
   },
   Sdelka: {
     description: [
@@ -56,8 +73,14 @@ const PROJECTS: Record<
       `• Курировал Backend-разработчика в правильной реазиации Rest-архитектуры серверной части приложения`,
       `• Исправил и оптимизировал код после junior-разработчиков`,
     ],
-    img: "/static/sdelka.png",
+    imgs: [
+      "/static/sdelka.png",
+      "/static/sdelka1.png",
+      "/static/sdelka2.png",
+      "/static/sdelka3.png",
+    ],
     link: "https://sdelka.estate/",
+    navColor: "#0B36B9",
   },
   Sber: {
     description: [
@@ -67,14 +90,20 @@ const PROJECTS: Record<
       `• Работал с базой данных Oracle Database`,
       `• Курировал стажера Frontend-разработчика`,
     ],
-    img: "/static/sber.png",
+    imgs: [
+      "/static/sber.png",
+      "/static/sber1.png",
+      "/static/sber2.png",
+      "/static/sber3.png",
+    ],
     link: "https://sbertech.ru/",
+    navColor: "#000",
   },
 };
 
 export default function Project({ params }: Props) {
   const { name = "" } = params;
-  const { description, img, link } = PROJECTS[name];
+  const { description, imgs, navColor, link } = PROJECTS[name];
 
   return (
     <div className={styles.root}>
@@ -83,13 +112,17 @@ export default function Project({ params }: Props) {
       </Link>
 
       <div className={styles.body}>
-        <Slider imgs={[img]} />
+        <Slider imgs={imgs} navColor={navColor} link={link} />
 
-        <ul className={styles.description}>
-          {description.map((desc) => (
-            <li key={desc}>{desc}</li>
-          ))}
-        </ul>
+        <div className={styles.info}>
+          <ul className={styles.description}>
+            {description.map((desc) => (
+              <li key={desc}>{desc}</li>
+            ))}
+          </ul>
+
+          <Link className={styles.link} href={link}>Ссылка</Link>
+        </div>
       </div>
     </div>
   );

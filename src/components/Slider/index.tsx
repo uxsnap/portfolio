@@ -1,7 +1,7 @@
 "use client";
 
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import { FreeMode, Thumbs } from "swiper/modules";
 import { useState } from "react";
 
 import "swiper/css";
@@ -13,25 +13,25 @@ import styles from "./Slider.module.scss";
 
 type Props = {
   imgs: string[];
+  navColor: string;
+  link: string;
 };
 
-export const Slider = ({ imgs }: Props) => {
-  const toRender = Array.from({ length: 5 }, () => imgs[0]);
+export const Slider = ({ imgs, navColor }: Props) => {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass | null>(null);
 
   return (
     <div className={styles.root}>
       <Swiper
-    
         onSwiper={setThumbsSwiper}
         spaceBetween={10}
         slidesPerView={4}
         freeMode
         watchSlidesProgress
-        modules={[FreeMode, Navigation, Thumbs]}
+        modules={[FreeMode, Thumbs]}
         className={styles.bottomSlides}
       >
-        {toRender.map((image) => (
+        {imgs.map((image) => (
           <SwiperSlide>
             <img src={image} />
           </SwiperSlide>
@@ -40,18 +40,18 @@ export const Slider = ({ imgs }: Props) => {
 
       <Swiper
         className={styles.mainSlider}
-        navigation
+        // navigation
         loop
         thumbs={{ swiper: thumbsSwiper }}
-        modules={[FreeMode, Navigation, Thumbs]}
+        modules={[FreeMode, Thumbs]}
         spaceBetween={30}
         slidesPerView={1}
         style={{
           // @ts-ignore
-          "--swiper-pagination-color": "rgba(240, 46, 170, 0.4)",
+          "--swiper-navigation-color": navColor,
         }}
       >
-        {toRender.map((image) => (
+        {imgs.map((image) => (
           <SwiperSlide>
             <img src={image} />
           </SwiperSlide>
