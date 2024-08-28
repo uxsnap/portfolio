@@ -32,7 +32,7 @@ export const Slider = ({ imgs, navColor }: Props) => {
         className={styles.bottomSlides}
       >
         {imgs.map((image) => (
-          <SwiperSlide>
+          <SwiperSlide key={image}>
             <img src={image} />
           </SwiperSlide>
         ))}
@@ -52,7 +52,7 @@ export const Slider = ({ imgs, navColor }: Props) => {
         }}
       >
         {imgs.map((image) => (
-          <SwiperSlide>
+          <SwiperSlide key={image}>
             <img src={image} />
           </SwiperSlide>
         ))}
