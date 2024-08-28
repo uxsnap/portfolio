@@ -3,7 +3,7 @@ import styles from "./WorkList.module.scss";
 const items = [
   {
     name: "Wildberries",
-    logo: "/static/wildberries.png",
+    logo: "/static/wildberries.webp",
   },
   {
     name: "Scriptive",
@@ -11,7 +11,7 @@ const items = [
   },
   {
     name: "Сбербанк",
-    logo: "/static/sberbank.png",
+    logo: "/static/sberbank.webp",
   },
   {
     name: "IT_ONE",

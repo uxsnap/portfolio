@@ -9,7 +9,7 @@ export default function Home() {
       </div>
 
       <div className={styles.me}>
-        <img src="/static/me.png" alt="_me" />
+        <img src="/static/me.webp" alt="_me" />
       </div>
     </div>
   );

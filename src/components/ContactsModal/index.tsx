@@ -24,7 +24,7 @@ const LINKS = [
   {
     name: "Мой LinkedIn",
     link: "https://www.linkedin.com/in/eugene-agafonov-6295881b2",
-    icon: "/static/linkedin.png",
+    icon: "/static/linkedin.webp",
   },
   {
     name: "Мое резюме",

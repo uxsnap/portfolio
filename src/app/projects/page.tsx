@@ -6,23 +6,23 @@ import ProjectCard from "@/components/ProjectCard";
 const PROJECTS = [
   {
     name: "Wildberries",
-    img: "/static/global_wb.png",
+    img: "/static/global_wb.webp",
   },
   {
     name: "Scriptive",
-    img: "/static/scriptive.png",
+    img: "/static/scriptive.webp",
   },
   {
     name: "IT_One",
-    img: "/static/it_one_bg.png",
+    img: "/static/it_one_bg.webp",
   },
   {
     name: "Sdelka",
-    img: "/static/sdelka.png",
+    img: "/static/sdelka.webp",
   },
   {
     name: "Sber",
-    img: "/static/sber.png",
+    img: "/static/sber.webp",
   },
 ];
 

@@ -4,35 +4,35 @@ import styles from "./Techs.module.scss";
 const items = [
   {
     name: "React",
-    logo: "/static/react.png",
+    logo: "/static/react.webp",
   },
   {
     name: "TypeScript",
-    logo: "/static/ts.png",
+    logo: "/static/ts.webp",
   },
   {
     name: "JavaScript",
-    logo: "/static/js.png",
+    logo: "/static/js.webp",
   },
   {
     name: "CSS",
-    logo: "/static/css.png",
+    logo: "/static/css.webp",
   },
   {
     name: "HTML",
-    logo: "/static/html.png",
+    logo: "/static/html.webp",
   },
   {
     name: "Tan Stack",
-    logo: "/static/tanStack.png",
+    logo: "/static/tanStack.webp",
   },
   {
     name: "React Hook Form",
-    logo: "/static/react-hook-form.png",
+    logo: "/static/react-hook-form.webp",
   },
   {
     name: "GraphQL",
-    logo: "/static/graphql.png",
+    logo: "/static/graphql.webp",
   },
   {
     name: "Next.js",
@@ -40,19 +40,19 @@ const items = [
   },
   {
     name: "Node.js",
-    logo: "/static/node.png",
+    logo: "/static/node.webp",
   },
   {
     name: "Sass",
-    logo: "/static/sass.png",
+    logo: "/static/sass.webp",
   },
   {
     name: "Vue",
-    logo: "/static/vue.png",
+    logo: "/static/vue.webp",
   },
   {
     name: "Go",
-    logo: "/static/go.png",
+    logo: "/static/go.webp",
   },
 ];
 

@@ -33,7 +33,7 @@ export const Slider = ({ imgs, navColor }: Props) => {
       >
         {imgs.map((image) => (
           <SwiperSlide key={image}>
-            <img src={image} />
+            <img src={image} loading="lazy" />
           </SwiperSlide>
         ))}
       </Swiper>
