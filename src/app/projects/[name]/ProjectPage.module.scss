@@ -15,7 +15,6 @@
 
   @media (max-width: 992px) {
     font-size: 16px;
-    margin-top: 50px;
   }
 }
 
@@ -65,4 +64,26 @@
   &:hover {
     background-color: rgba(240, 46, 170, 0.4);
   }
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+
+  @media (max-width: 992px) {
+    margin-top: 30px;
+  }
+}
+
+.subtitle {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.projectDesc {
+  margin: 20px 0;
+  color: black;
+  opacity: .6;
+  font-size: 18px;
+  line-height: 1.5;
 }
