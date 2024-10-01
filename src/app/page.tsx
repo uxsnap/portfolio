@@ -4,8 +4,17 @@ export default function Home() {
   return (
     <div className={styles.root}>
       <div className={styles.title}>
-        <h1>Инженер</h1>
-        <h2>Программист</h2>
+        <div className={styles.titleWrapper}>
+          <div>
+            <h3>Инженер</h3>
+            <h4>Программист</h4>
+          </div>
+
+          <div>
+            <h1>Агафонов</h1>
+            <h2>Евгений</h2>
+          </div>
+        </div>
       </div>
 
       <div className={styles.me}>
