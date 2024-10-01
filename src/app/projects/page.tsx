@@ -29,7 +29,7 @@ const PROJECTS = [
 export default function Projects() {
   return (
     <div className={styles.root}>
-      <h1>Мои проекты:</h1>
+      <h1>Проекты</h1>
 
       <ul className={styles.list}>
         {PROJECTS.map((project) => (

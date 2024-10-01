@@ -1,5 +1,5 @@
 .root {
-  padding: 20px;
+  padding: 16px;
   display: flex;
   justify-content: flex-end;
 
@@ -29,6 +29,15 @@
 
     &.active {
       display: flex;
+    }
+  }
+
+  .item {
+    transition: all .5s;
+    padding: 8px;
+      
+    &:hover {
+      background-color: rgba(240, 46, 170, 0.4);
     }
   }
 }

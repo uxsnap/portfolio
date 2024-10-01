@@ -136,7 +136,7 @@ html {
 
 body {
   background: white;
-  background-image: radial-gradient(#BEBEBE 1px, transparent 0);
+  background-image: radial-gradient(#bebebe 1px, transparent 0);
   background-size: 30px 30px;
   background-position: -14px -14px;
 }

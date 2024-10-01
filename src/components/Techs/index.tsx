@@ -57,8 +57,7 @@ const items = [
 ];
 
 const Techs = () => (
-  // @ts-ignore
-  <marquee className={styles.root}>
+  <div className={styles.root}>
     {items.map(({ name, logo }) => (
       <div key={name} className={styles.card}>
         <Image
@@ -70,8 +69,7 @@ const Techs = () => (
         <div>{name}</div>
       </div>
     ))}
-    {/* @ts-ignore */}
-  </marquee>
+  </div>
 );
 
 export default Techs;

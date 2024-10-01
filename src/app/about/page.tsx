@@ -13,9 +13,9 @@ export default function AboutMe() {
   return (
     <div className={cn(styles.root, rightSide && styles.right)}>
       <div className={styles.main}>
-        <PetProjects onClick={() => setRightSide(!rightSide)} />
-
         <Experience onClick={() => setRightSide(!rightSide)} />
+
+        <PetProjects onClick={() => setRightSide(!rightSide)} />
       </div>
     </div>
   );
