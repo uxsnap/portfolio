@@ -10,9 +10,9 @@ export default function Home() {
             <h4>Программист</h4>
           </div>
 
-          <div>
+          <div className={styles.fullName}>
             <h1>Агафонов</h1>
-            <h2>Евгений</h2>
+            <h2 className={styles.name}>Евгений</h2>
           </div>
         </div>
       </div>
